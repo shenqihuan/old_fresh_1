@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd" >
+<generatorConfiguration >
+<classPathEntry location="classpaht:mysql-connector-java-5.1.40-bin.jar" />
+  <context id="context1" >
+    <jdbcConnection driverClass="com.mysql.jdbc.Driver" connectionURL="jdbc:mysql://localhost:3306/oldfresh_test" userId="root" password="root" />
+    <javaModelGenerator targetPackage="com.cn.hys.pojo" targetProject="old_fresh Maven Webapp/src/main/java" />
+    <sqlMapGenerator targetPackage="com.cn.hys.mapping" targetProject="old_fresh Maven Webapp/src/main/java" >
+    </sqlMapGenerator>
+    <javaClientGenerator targetPackage="com.cn.hys.dao" targetProject="old_fresh Maven Webapp/src/main/java" type="XMLMAPPER" />
+    <table schema="oldfresh_test" tableName="user_t" >
+      <!-- 使用从数据库元数据获取的列名作为生成的实体对象的属性 -->  
+            <property name="user_name" value="true" />  
+            <property name="age" value="true" /> 
+            <!-- 指定自动生成主键 -->  
+            <generatedKey column="id" sqlStatement="MySql" identity="true" />  
+    </table>
+  </context>
+</generatorConfiguration>
