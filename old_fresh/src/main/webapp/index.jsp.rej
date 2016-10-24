@@ -1,0 +1,7 @@
+diff a/old_fresh/src/main/webapp/index.jsp b/old_fresh/src/main/webapp/index.jsp	(rejected hunks)
+@@ -0,3 +0,5 @@
+ <html>
+ <body>
++<h2>Hello World!</h2>
++</body>
+ </html>
